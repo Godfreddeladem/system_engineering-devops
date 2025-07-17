@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
-# This script runs an infinite loop and displays a message when receiving SIGTERM
+# This script traps SIGTERM and prints "I am invincible!!!"
 
 trap 'echo "I am invincible!!!"' SIGTERM
 
-# Infinite loop to keep the process running
+# Print OK to signal successful launch
+echo "OK"
+
+# Keep the script alive to wait for signals
 while true; do
     sleep 1
 done
