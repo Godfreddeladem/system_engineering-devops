@@ -1,13 +1,10 @@
 #!/usr/bin/env bash
-# This script traps SIGTERM and prints "I am invincible!!!"
+# This script displays 'To infinity and beyond' 
+# Expectations: In between each iteration of the loop, add a sleep 2
 
 trap 'echo "I am invincible!!!"' SIGTERM
-
-# Print OK to signal successful launch
- echo "OK"
-
-# Keep the script alive to wait for signals
-while true; do
-    sleep 1
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
 done
-
