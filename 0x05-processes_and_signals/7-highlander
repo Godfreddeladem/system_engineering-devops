@@ -4,7 +4,7 @@
 trap 'echo "I am invincible!!!"' SIGTERM
 
 # Print OK to signal successful launch
-echo "OK"
+ echo "OK"
 
 # Keep the script alive to wait for signals
 while true; do
