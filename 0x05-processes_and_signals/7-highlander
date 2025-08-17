@@ -3,7 +3,7 @@
 
 # Trap SIGTERM signal
 trap 'echo "I am invincible!!!"' SIGTERM
-
+ echo "OK"
 # Infinite loop
 while true
 do
