@@ -1,12 +1,11 @@
 #!/usr/bin/env bash
-# 7-highlander - Infinite loop with SIGTERM handler
+# This script displays 'To infinity and beyond' 
+# Expectations: In between each iteration of the loop, add a sleep 2
 
-# Trap SIGTERM signal
 trap 'echo "I am invincible!!!"' SIGTERM
- echo "OK"
-# Infinite loop
 while true
 do
     echo "To infinity and beyond"
     sleep 2
 done
+
